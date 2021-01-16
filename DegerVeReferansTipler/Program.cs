@@ -20,6 +20,10 @@ namespace DegerVeReferansTipler
             sayilar2[0] = 999;
             Console.WriteLine(sayilar1[0]);
             //sayilar1[0] ?? 999
+            //int,decimal,float,double,bool= değer tip
+            //array,class,interface =referans tip
+            //deger tipler direk değer ile; referans tipler memory deki heap adreslerin pointerlari ile eslestirilir.
+            //bu sebeple diziler birbirine esitlendiğinde aslında değerleri değil, değerlerin bulundugu memory adresleri eşleştirilir.
         }
     }
 }
