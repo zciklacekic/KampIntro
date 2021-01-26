@@ -7,12 +7,18 @@ namespace Dictionaries
     {
         static void Main(string[] args)
         {
-            MyDictionary<string, string> cities = new MyDictionary<string, string>();
+            MyDictionary<string, string> countries = new MyDictionary<string, string>();
 
-            cities.Add("1", "Ankara");
-            cities.Add("2", "İstanbul");
+            countries.Add("TR", "Turkey");              //add function
+            countries.Add("DE", "Germany");
+            countries.Add("UA", "Ukraine");
+            countries.Add("EG", "Egypt");
 
-            cities.GetAll();
+            Console.WriteLine(countries.Count);         //count property
+            for (int i = 0; i < countries.Count; i++)   
+            {
+                countries.Write(i);                     //print value function
+            }
         }
     }
 }
